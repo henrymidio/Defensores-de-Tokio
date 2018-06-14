@@ -1,0 +1,108 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.henrique.det.Vantagens">
+
+
+
+    <Spinner
+        android:id="@+id/exibeV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/exibeV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/exibeV1"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/exibeV3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/exibeV2"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/exibeV4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/exibeV3"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textDesvantagens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/exibeV4"
+        android:layout_marginTop="5dp"
+        android:text="Desvantagens"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/lineA"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/textDesvantagens"
+        android:layout_marginTop="10dp"
+        android:background="#000000"
+        android:orientation="horizontal" />
+
+    <Spinner
+        android:id="@+id/exibeD1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lineA"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/exibeD2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/exibeD1"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/exibeD3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/exibeD2"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/exibeD4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/exibeD3"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>

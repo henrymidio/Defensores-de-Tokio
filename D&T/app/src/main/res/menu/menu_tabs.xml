@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.henrique.det.br.com.henrique.det.tabs.Tabs">
+    <item android:id="@+id/alterar"
+        android:title="Salvar Alterações"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_save"
+        app:showAsAction="always" />
+</menu>

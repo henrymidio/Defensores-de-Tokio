@@ -1,0 +1,651 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/conteiner"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+        android:id="@+id/rl">
+
+
+
+        <LinearLayout
+            android:id="@+id/layout0"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#ffc7c7c7"
+            android:layout_alignRight="@+id/layout1"
+            android:layout_alignEnd="@+id/layout1">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp">
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:layout_alignParentBottom="true"
+                    android:background="#fffdfdfd"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="30dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/exibeNome"
+                    android:textStyle="italic"
+                    android:paddingTop="10dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout0"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#ffc7c7c7"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="F"
+                android:id="@+id/textView"
+                android:layout_below="@+id/editNome"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="50sp"
+                android:layout_marginLeft="10dp"
+                android:linksClickable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="orça"
+                android:id="@+id/textView2"
+                android:textSize="40sp"
+                android:textColor="#ffffffff" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/editForca"
+                    android:background="#fffdfdfd"
+                    android:layout_marginRight="50dp"
+                    android:textSize="30dp"
+                    android:text="0"
+                    android:paddingLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="62dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="10"
+                    android:id="@+id/textForca"
+                    android:layout_alignBottom="@+id/editForca"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="+"
+                    android:id="@+id/textView6"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/editForca"
+                    android:layout_toStartOf="@+id/editForca"
+                    android:textSize="30dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffc7c7c7"
+            android:id="@+id/layout2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="H"
+
+                android:layout_below="@+id/editNome"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="50sp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="abilidade"
+
+                android:textSize="30sp"
+                android:textColor="#ffffffff"
+                android:textIsSelectable="false" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/exibeHabilidade"
+                    android:background="#fffdfdfd"
+                    android:text="0"
+                    android:paddingLeft="10dp"
+                    android:textSize="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="10"
+                    android:id="@+id/textHabilidade"
+                    android:layout_alignBottom="@+id/exibeHabilidade"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="+"
+                    android:id="@+id/textView7"
+                    android:textSize="30sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/exibeHabilidade"
+                    android:layout_toStartOf="@+id/exibeHabilidade" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffc7c7c7"
+            android:id="@+id/layout3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="R"
+
+                android:layout_below="@+id/exibeNome"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="50sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="esistência"
+
+                android:textSize="30sp"
+                android:textColor="#ffffffff"
+                 />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:text="0"
+                    android:background="#fffdfdfd"
+
+                    android:paddingLeft="10dp"
+                    android:textSize="30dp"
+                    android:id="@+id/exibeResistencia"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="10"
+                    android:id="@+id/textResistencia"
+                    android:layout_alignBottom="@+id/exibeResistencia"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="+"
+                    android:id="@+id/textView8"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/exibeResistencia"
+                    android:layout_toStartOf="@+id/exibeResistencia"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffc7c7c7"
+            android:id="@+id/layout4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="A"
+
+                android:layout_below="@+id/editNome"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="50sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="rmadura"
+
+                android:textSize="34sp"
+                android:textColor="#ffffffff"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:text="0"
+                    android:background="#fffdfdfd"
+
+                    android:paddingLeft="10dp"
+                    android:textSize="30dp"
+                    android:id="@+id/editArmadura"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="10"
+                    android:id="@+id/textArmadura"
+                    android:layout_alignBottom="@+id/editArmadura"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="+"
+                    android:id="@+id/textView9"
+                    android:textSize="30sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/editArmadura"
+                    android:layout_toStartOf="@+id/editArmadura" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffc7c7c7"
+            android:id="@+id/layout5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="PdF"
+
+                android:layout_below="@+id/editNome"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="50sp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/vgjgh" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:text="0"
+                    android:background="#fffdfdfd"
+                    android:layout_marginRight="50dp"
+
+                    android:paddingLeft="10dp"
+                    android:textSize="30dp"
+                    android:id="@+id/editPDF"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="62dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="10"
+                    android:id="@+id/textPDF"
+                    android:layout_alignBottom="@+id/editPDF"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="+"
+                    android:id="@+id/textView10"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/editPDF"
+                    android:layout_toStartOf="@+id/editPDF"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:id="@+id/barra"
+            android:layout_height="4dp"
+            android:background="#000000"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/layout5"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffc7c7c7"
+            android:id="@+id/layout6"
+            android:layout_below="@+id/barra">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="M"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="45sp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/vgjvhjgfgh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="agia"
+                android:id="@+id/tehvjxtVbkiew2"
+                android:textSize="40sp"
+                android:textColor="#ffffffff" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:text="0"
+                    android:background="#fffdfdfd"
+                    android:layout_marginRight="50dp"
+                    android:textSize="30sp"
+                    android:id="@+id/editPM"
+                    android:layout_marginEnd="62dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="10"
+                    android:id="@+id/textPM"
+                    android:layout_alignBottom="@+id/editPM"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffc7c7c7"
+            android:id="@+id/layout7"
+            android:layout_below="@+id/layout6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="V"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="45sp"
+                android:layout_marginLeft="10dp"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="ida"
+
+                android:textSize="40sp"
+                android:textColor="#ffffffff" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:text="0"
+                    android:background="#fffdfdfd"
+                    android:layout_marginRight="50dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="30sp"
+                    android:id="@+id/editPV"
+                    android:layout_marginEnd="62dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="10"
+                    android:id="@+id/textPV"
+                    android:layout_alignBottom="@+id/editPV"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffc7c7c7"
+            android:id="@+id/layout8"
+            android:layout_below="@+id/layout7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="E"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="45sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="xperiência"
+
+                android:textSize="40sp"
+                android:textColor="#ffffffff" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:text="0"
+                    android:background="#fffdfdfd"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="30sp"
+                    android:id="@+id/editEX"
+                    android:layout_marginEnd="62dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

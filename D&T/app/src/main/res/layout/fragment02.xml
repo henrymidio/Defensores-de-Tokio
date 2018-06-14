@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.henrique.det.Vantagens">
+
+    <TextView
+        android:id="@+id/textVantagens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vantagens"
+
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/lineB"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/textVantagens"
+        android:layout_marginTop="10dp"
+        android:background="#000000"
+        android:orientation="horizontal" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/lineB"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/spinner2"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/spinner3"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textDesvantagens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/spinner4"
+        android:layout_marginTop="5dp"
+        android:text="Desvantagens"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/lineA"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/textDesvantagens"
+        android:layout_marginTop="10dp"
+        android:background="#000000"
+        android:orientation="horizontal" />
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lineA"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/spinner5"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/spinner6"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/spinner7"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>

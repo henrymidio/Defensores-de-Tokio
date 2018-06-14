@@ -1,0 +1,91 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="br.com.henrique.det.DinheiroItensHistoria">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dinheiro e Itens"
+        android:id="@+id/textDinheiro"
+        android:textSize="30dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/lineA"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/textDinheiro"
+        android:layout_height="4dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_below="@id/lineA"
+        android:lineSpacingExtra="5dp"
+        android:id="@+id/editItens"
+        android:layout_alignTop="@+id/lineA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="História"
+        android:id="@+id/textHistoria"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editItens" />
+
+    <LinearLayout
+        android:id="@+id/lineB"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/textHistoria"
+        android:layout_height="4dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:lineSpacingExtra="5dp"
+        android:layout_below="@+id/lineB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Esta é uma versão freeware e você somente poderá criar uma nova ficha de personagem reinstalando a aplicação."
+        android:id="@+id/textView5"
+        android:layout_below="@+id/editText4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffc7c7c7"
+        android:layout_marginTop="10dp" />
+
+
+
+</RelativeLayout>
+
+    </ScrollView>
